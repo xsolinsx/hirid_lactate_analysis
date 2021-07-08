@@ -1,30 +1,11 @@
 bindings = {
-    "patient": {
-        "gender": "sex",
-        "age": "age",
-        "ethnicity": "",
-        "admissionweight": "62,Observation,10000400,Body weight,kg",
-        "apacheadmissiondx": [
-            "64,Observation,9990002,APACHE II Group",
-            "65,Observation,9990004,APACHE IV Group",
-        ],
+    "Demographics": {
+        "Gender": "sex",
+        "Age": "age",
+        "Weight": "62,Observation,10000400,Body weight,kg",
     },
-    "lab": {
-        "Respiratory Rate": [
-            "29,Observation,300,Respiratory rate,/min",
-            "30,Observation,310,Respiratory rate,/min",
-            "31,Observation,5685,Respiratory rate,/min",
-        ],
-        "O2 Saturation": [
-            "16,Observation,4200,Mixed venous oxygen saturation,%",
-            "24,Observation,4000,Peripheral oxygen saturation,%",
-            "25,Observation,8280,Peripheral oxygen saturation,%",
-            "75,Observation,20000800,Oxygen saturation in Arterial blood,%",
-            "76,Observation,20001000,Central venous oxygenation saturation,%",
-            "77,Observation,24000737,Central venous oxygenation saturation,%",
-        ],
-        "FiO2": "34,Observation,2010,Inspired oxygen concentration,%",
-        "glucose": [
+    "Laboratory": {
+        "Glucose": [
             "120,Observation,20005110,Glucose [Moles/volume] in Serum or Plasma,mmol/l",
             "121,Observation,24000523,Glucose [Moles/volume] in Serum or Plasma,mmol/l",
             "122,Observation,24000585,Glucose [Moles/volume] in Serum or Plasma,mmol/l",
@@ -39,13 +20,23 @@ bindings = {
             "421,Pharma,1000690,Glucose 10%",
             "422,Pharma,1000689,Glucose 20%",
         ],
-        "potassium": [
-            "85,Observation,20000500,Potassium [Moles/volume] in Blood,mmol/l",
-            "86,Observation,24000520,Potassium [Moles/volume] in Blood,mmol/l",
-            "87,Observation,24000833,Potassium [Moles/volume] in Blood,mmol/l",
-            "88,Observation,24000867,Potassium [Moles/volume] in Blood,mmol/l",
+        "ALT": "107,Observation,20002600,Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma,U/l",
+        "AST": "106,Observation,24000330,Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma,U/l",
+        "Differential-Basos": "",
+        "Differential-Lymphs": "126,Observation,24000480,Lymphocytes [#/volume] in Blood,G/l",
+        "Differential-Monos": "",
+        "BUN": [
+            "100,Observation,20004100,Urea [Moles/volume] in Venous blood,mmol/l",
+            "105,Observation,24000754,Urea [Moles/volume] in Urine,mmol/l",
         ],
-        "sodium": [
+        "Anion Gap": "#TO BE COMPUTED https://www.mdcalc.com/anion-gap",
+        "Base Excess": "66,Observation,20001300,Base excess in Arterial blood by calculation,mmol/l",
+        "pH": [
+            "72,Observation,20000300,pH of Arterial blood",
+            "146,Observation,24000741,pH of Body fluid,from drain",
+            "143,Observation,24000608,pH of Cerebral spinal fluid",
+        ],
+        "Sodium": [
             "89,Observation,20000400,Sodium [Moles/volume] in Blood,mmol/l",
             "90,Observation,24000519,Sodium [Moles/volume] in Blood,mmol/l",
             "91,Observation,24000658,Sodium [Moles/volume] in Blood,mmol/l",
@@ -54,108 +45,102 @@ bindings = {
             "104,Observation,20003200,Sodium [Moles/volume] in Urine,mmol/l",
             "181,Pharma,1000252,Sodium nitro",
         ],
-        "hgb": [
-            "67,Observation,24000526,Carboxyhemoglobin/Hemoglobin.total in Arterial blood,%",
-            "68,Observation,24000548,Hemoglobin [Mass/volume] in Arterial blood,g/L",
-            "71,Observation,24000549,Methemoglobin/Hemoglobin.total in Arterial blood,%",
-            "131,Observation,20000900,Hemoglobin [Mass/volume] in Blood,g/l",
-            "132,Observation,24000836,Hemoglobin [Mass/volume] in Blood,g/l",
+        "Potassium": [
+            "85,Observation,20000500,Potassium [Moles/volume] in Blood,mmol/l",
+            "86,Observation,24000520,Potassium [Moles/volume] in Blood,mmol/l",
+            "87,Observation,24000833,Potassium [Moles/volume] in Blood,mmol/l",
+            "88,Observation,24000867,Potassium [Moles/volume] in Blood,mmol/l",
         ],
-        "chloride": [
-            "94,Observation,24000439,Chloride [Moles/volume] in Blood,mmol/l",
-            "95,Observation,24000521,Chloride [Moles/volume] in Blood,mmol/l",
-            "553,Pharma,1000396,Kalium Chlorid 15% 10 ml",
-            "555,Pharma,1000612,Kalium-Chlorid Sirup",
-            "572,Pharma,1000687,Calciumchlorid 5%",
-        ],
-        "creatinine": [
-            "101,Observation,20000600,Creatinine [Moles/volume] in Blood,umol/l",
-            "102,Observation,24000572,Creatinine [Moles/volume] in Urine,umol/l",
-            "103,Observation,24000573,Creatinine [Moles/volume] in Urine,umol/l",
-        ],
-        "BUN": [
-            "100,Observation,20004100,Urea [Moles/volume] in Venous blood,mmol/l",
-            "105,Observation,24000754,Urea [Moles/volume] in Urine,mmol/l",
-        ],
-        "bicarbonate": "69,Observation,20004200,Bicarbonate [Moles/volume] in Arterial blood,mmol/l",
-        "LPM O2": [
-            "32,Observation,15001555,Oxygen administration by mask,l/min",
-            "33,Observation,15001525,Oxygen administration by nasal cannula,l/min",
-        ],
-        "calcium": [
+        "Calcium": [
             "96,Observation,24000522,Calcium.ionized [Moles/volume] in Blood,mmol/l",
             "97,Observation,20005100,Calcium [Moles/volume] in Blood,mmol/l",
             "572,Pharma,1000687,Calciumchlorid 5%",
             "574,Pharma,1000291,Calcium Sandoz FF Brausetabl 1000 mg",
             "575,Pharma,1000292,Calcium Sandoz Lsg 10% 10 ml",
         ],
-        "Hct": "",
-        "platelets x 1000": "134,Observation,20000110,Platelets [#/volume] in Blood,G/l",
-        "anion gap": "",
-        "WBC x 1000": "133,Observation,20000700,Leukocytes [#/volume] in Blood,G/l",
-        "lactate": [
+        "Magnesium": "99,Observation,24000230,Magnesium [Moles/volume] in Blood,mmol/l",
+        "Phosphate": "98,Observation,20002500,Phosphate [Moles/volume] in Blood,mmol/l",
+        "Bicarbonate": "69,Observation,20004200,Bicarbonate [Moles/volume] in Arterial blood,mmol/l",
+        "Creatinine": [
+            "101,Observation,20000600,Creatinine [Moles/volume] in Blood,umol/l",
+            "102,Observation,24000572,Creatinine [Moles/volume] in Urine,umol/l",
+            "103,Observation,24000573,Creatinine [Moles/volume] in Urine,umol/l",
+        ],
+        "Chloride": [
+            "94,Observation,24000439,Chloride [Moles/volume] in Blood,mmol/l",
+            "95,Observation,24000521,Chloride [Moles/volume] in Blood,mmol/l",
+            "553,Pharma,1000396,Kalium Chlorid 15% 10 ml",
+            "555,Pharma,1000612,Kalium-Chlorid Sirup",
+            "572,Pharma,1000687,Calciumchlorid 5%",
+        ],
+        "Bilirubin": [
+            "109,Observation,24000560,Bilirubin.direct [Mass/volume] in Serum or Plasma,umol/l",
+            "108,Observation,20004300,Bilirubin.total [Moles/volume] in Serum or Plasma,umol/l",
+        ],
+        "Red Blood Cells": [
+            "130,Observation,24000668,Erythrocyte sedimentation rate,mm/1h",
+            "316,Pharma,1000791,Erythrocin Inf Lsg",
+        ],
+        "White Blood Cells": "133,Observation,20000700,Leukocytes [#/volume] in Blood,G/l",
+        "Platelets": "134,Observation,20000110,Platelets [#/volume] in Blood,G/l",
+        "Hematocrit": "#NEED CLINICAL CONFIRMATION 130,Observation,24000668,Erythrocyte sedimentation rate,mm/1h",
+        "Hemoglobin": [
+            "67,Observation,24000526,Carboxyhemoglobin/Hemoglobin.total in Arterial blood,%",
+            "68,Observation,24000548,Hemoglobin [Mass/volume] in Arterial blood,g/L",
+            "71,Observation,24000549,Methemoglobin/Hemoglobin.total in Arterial blood,%",
+            "131,Observation,20000900,Hemoglobin [Mass/volume] in Blood,g/l",
+            "132,Observation,24000836,Hemoglobin [Mass/volume] in Blood,g/l",
+        ],
+        "Troponin T": [
+            "78,Observation,24000538,Troponin T.cardiac [Mass/volume] in Serum or Plasma,ng/l",
+            "79,Observation,24000806,Troponin T.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method,ng/l",
+        ],
+        "RDW": "#TO BE COMPUTED FROM MCV https://www.mdapp.co/red-blood-cell-distribution-width-rdw-calculator-198/",
+        "Alkaline Phosphate": "110,Observation,20002700,Alkaline phosphatase [Enzymatic activity/volume] in Blood,U/l",
+        "Ionized Calcium": "96,Observation,24000522,Calcium.ionized [Moles/volume] in Blood,mmol/l",
+        "PaCO2": "73,Observation,20001200,Carbon dioxide [Partial pressure] in Arterial blood,mmHg",
+        "PaO2": "74,Observation,20000200,Oxygen [Partial pressure] in Arterial blood,mmHg",
+        "Lactate": [
             "70,Observation,24000524,Lactate [Mass/volume] in Arterial blood,mmol/l",
             "82,Observation,24000732,Lactate [Moles/volume] in Venous blood,mmol/l",
             "83,Observation,24000485,Lactate [Moles/volume] in Venous blood,mmol/l",
             "144,Observation,24000564,Lactate [Moles/volume] in Cerebral spinal fluid,mmol/l",
         ],
-        "RBC": [
-            "130,Observation,24000668,Erythrocyte sedimentation rate,mm/1h",
-            "316,Pharma,1000791,Erythrocin Inf Lsg",
-        ],
-        "RDW": "",
-        "paO2": "74,Observation,20000200,Oxygen [Partial pressure] in Arterial blood,mmHg",
-        "pH": [
-            "72,Observation,20000300,pH of Arterial blood",
-            "146,Observation,24000741,pH of Body fluid,from drain",
-            "143,Observation,24000608,pH of Cerebral spinal fluid",
-        ],
-        "paCO2": "73,Observation,20001200,Carbon dioxide [Partial pressure] in Arterial blood,mmHg",
-        "magnesium": "99,Observation,24000230,Magnesium [Moles/volume] in Blood,mmol/l",
-        "HCO3": "69,Observation,20004200,Bicarbonate [Moles/volume] in Arterial blood,mmol/l",  # same of bicarbonate
-        "Total CO2": [
-            "26,Observation,2200,End tidal carbon dioxide concentration,mmHg",
-            "27,Observation,8290,End tidal carbon dioxide concentration,mmHg",
-            "28,Observation,30010009,End tidal carbon dioxide concentration,mmHg",
-        ],
-        "Base Excess": "66,Observation,20001300,Base excess in Arterial blood by calculation,mmol/l",
-        "phosphate": "98,Observation,20002500,Phosphate [Moles/volume] in Blood,mmol/l",
-        "Pressure Support": "",
-        "albumin": "119,Observation,24000605,Albumin [Mass/volume] in Serum or Plasma,g/L",
-        "-lymphs": "126,Observation,24000480,Lymphocytes [#/volume] in Blood,G/l",
-        "-polys": "",
-        "-eos": "",
-        "-basos": "",
-        "-bands": "",
-        "-monos": "",
-        "bilirubin": [
-            "109,Observation,24000560,Bilirubin.direct [Mass/volume] in Serum or Plasma,umol/l",
-            "108,Observation,20004300,Bilirubin.total [Moles/volume] in Serum or Plasma,umol/l",
-        ],
-        "AST (SGOT)": "106,Observation,24000330,Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma,U/l",
-        "ALT (SGPT)": "107,Observation,20002600,Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma,U/l",
-        "total protein": "",
-        "alkaline phos.": "110,Observation,20002700,Alkaline phosphatase [Enzymatic activity/volume] in Blood,U/l",
+        "MCV": "137,Observation,24000150,MCV [Entitic volume],fl",
+        "MCH": "135,Observation,24000160,MCH [Entitic mass],pg",
+        "MCHC": "136,Observation,24000170,MCHC [Mass/volume] in Cord blood,g/L",
+        "PT": "114,Observation,24000666,Prothrombin activity actual/normal in Platelet poor plasma by Coagulation assay,%",
+        "PTT": "112,Observation,20004410,aPTT in Blood by Coagulation assay,Sek",
     },
-    "nurse charting": {
+    "Clinical Observations": {
         "Heart Rate": "1,Observation,200,Heart rate,/min",
         "Respiratory Rate": [
             "29,Observation,300,Respiratory rate,/min",
             "30,Observation,310,Respiratory rate,/min",
             "31,Observation,5685,Respiratory rate,/min",
         ],
-        "Temperature (C)": [
+        "ART BP Mean": [
+            "7,Observation,110,Invasive mean arterial pressure,mmHg",
+            "10,Observation,610,Non-invasive mean arterial pressure,mmHg",
+        ],
+        "ART BP Diastolic": [
+            "6,Observation,120,Invasive diastolic arterial pressure,mmHg",
+            "9,Observation,620,Non-invasive diastolic arterial pressure,mmHg",
+        ],
+        "ART BP Systolic": [
+            "5,Observation,100,Invasive systolic arterial pressure,mmHg",
+            "8,Observation,600,Non-invasive systolic arterial pressure,mmHg",
+        ],
+        "Temperature": [
             "2,Observation,410,Core body temperature,Â°C",
             "3,Observation,7100,Rectal temperature,Â°C",
             "4,Observation,400,Axillary temperature,Â°C",
         ],
-        "Invasive BP Mean": "7,Observation,110,Invasive mean arterial pressure,mmHg",
-        "Invasive BP Systolic": "5,Observation,100,Invasive systolic arterial pressure,mmHg",
-        "Invasive BP Diastolic": "6,Observation,120,Invasive diastolic arterial pressure,mmHg",
-        "Non-Invasive BP Mean": "10,Observation,610,Non-invasive mean arterial pressure,mmHg",
-        "Non-Invasive BP Systolic": "8,Observation,600,Non-invasive systolic arterial pressure,mmHg",
-        "Non-Invasive BP Diastolic": "9,Observation,620,Non-invasive diastolic arterial pressure,mmHg",
-        "O2 Saturation": [
+        "GCS-Total": "#TO BE COMPUTED Sum of the three below",
+        "GCS-Eye Opening": "48,Observation,10000300,Glasgow Coma Score eye opening subscore,Ordinal Score",
+        "GCS-Motor Response": "47,Observation,10000200,Glasgow Coma Score motor response subscore,Ordinal Score",
+        "GCS-Verbal Response": "46,Observation,10000100,Glasgow Coma Score verbal response subscore,Ordinal Score",
+        "Oxygen Saturation": [
             "16,Observation,4200,Mixed venous oxygen saturation,%",
             "24,Observation,4000,Peripheral oxygen saturation,%",
             "25,Observation,8280,Peripheral oxygen saturation,%",
@@ -163,98 +148,18 @@ bindings = {
             "76,Observation,20001000,Central venous oxygenation saturation,%",
             "77,Observation,24000737,Central venous oxygenation saturation,%",
         ],
-        "glucose": [
-            "120,Observation,20005110,Glucose [Moles/volume] in Serum or Plasma,mmol/l",
-            "121,Observation,24000523,Glucose [Moles/volume] in Serum or Plasma,mmol/l",
-            "122,Observation,24000585,Glucose [Moles/volume] in Serum or Plasma,mmol/l",
-            "145,Observation,24000400,Glucose [Moles/volume] in Cerebral spinal fluid,mmol/l",
-            "414,Pharma,1000746,Glucose 20%/100ml Pflege",
-            "415,Pharma,1000544,Glucose 20% /100ml",
-            "416,Pharma,1000545,Glucose 40%",
-            "417,Pharma,1000567,Glucose 50%",
-            "418,Pharma,1000060,Glucose 30%",
-            "419,Pharma,1000835,Glucose 20% /500ml",
-            "420,Pharma,1000022,Glucose 10%",
-            "421,Pharma,1000690,Glucose 10%",
-            "422,Pharma,1000689,Glucose 20%",
-        ],
         "CVP": [
             "17,Observation,700,Central venous pressure,mmHg",
             "18,Observation,15001441,Central venous pressure,mmHg",
             "19,Observation,960,Central venous pressure,mmHg",
         ],
-        "LPM O2": [
-            "32,Observation,15001555,Oxygen administration by mask,l/min",
-            "33,Observation,15001525,Oxygen administration by nasal cannula,l/min",
-        ],
-        "Total CO2": [
-            "26,Observation,2200,End tidal carbon dioxide concentration,mmHg",
-            "27,Observation,8290,End tidal carbon dioxide concentration,mmHg",
-            "28,Observation,30010009,End tidal carbon dioxide concentration,mmHg",
-        ],
+        "Urine Output": "45,Observation,10020000,Hourly urine volume,ml/h",
     },
-    "respiratory charting": {
-        "Heart Rate": "1,Observation,200,Heart rate,/min",
-        "Respiratory Rate": [
-            "29,Observation,300,Respiratory rate,/min",
-            "30,Observation,310,Respiratory rate,/min",
-            "31,Observation,5685,Respiratory rate,/min",
-        ],
+    "Treatment": {
         "FiO2": "34,Observation,2010,Inspired oxygen concentration,%",
-        "Total CO2": [
-            "26,Observation,2200,End tidal carbon dioxide concentration,mmHg",
-            "27,Observation,8290,End tidal carbon dioxide concentration,mmHg",
-            "28,Observation,30010009,End tidal carbon dioxide concentration,mmHg",
-        ],
-        "Tidal Volume": [
-            "26,Observation,2200,End tidal carbon dioxide concentration,mmHg",
-            "27,Observation,8290,End tidal carbon dioxide concentration,mmHg",
-            "28,Observation,30010009,End tidal carbon dioxide concentration,mmHg",
-            "38,Observation,2410,Expiratory tidal volume,ml",
-            "39,Observation,2400,Tidal volume setting,ml",
-        ],  # some are the same of total co2
-        "Inspiratory Pressure": [
-            "40,Observation,3110,Peak inspiratory pressure,cmH2O",
-            "42,Observation,3000,Mean inspiratory airway pressure,cmH2O",
-        ],
-        "LPM O2": [
-            "32,Observation,15001555,Oxygen administration by mask,l/min",
-            "33,Observation,15001525,Oxygen administration by nasal cannula,l/min",
-        ],
-        "Vent Rate": "43,Observation,320,Ventilator rate,/min",
-        "Plateau Pressure": "41,Observation,3200,Plateau pressure,cmH2O",
-        "Mean Airway Pressure": "42,Observation,3000,Mean inspiratory airway pressure,cmH2O",  # same of inspiratory pressure
-        "Pressure Support": "",
-        "Inspiratory Pressure": [
-            "40,Observation,3110,Peak inspiratory pressure,cmH2O",
-            "42,Observation,3000,Mean inspiratory airway pressure,cmH2O",
-        ],  # duplicate?
     },
-    "vital periodic": {
-        "Heart Rate": "1,Observation,200,Heart rate,/min",
-        "Respiratory Rate": [
-            "29,Observation,300,Respiratory rate,/min",
-            "30,Observation,310,Respiratory rate,/min",
-            "31,Observation,5685,Respiratory rate,/min",
-        ],
-        "Temperature (C)": [
-            "2,Observation,410,Core body temperature,Â°C",
-            "3,Observation,7100,Rectal temperature,Â°C",
-            "4,Observation,400,Axillary temperature,Â°C",
-        ],
-        "Invasive BP Mean": "7,Observation,110,Invasive mean arterial pressure,mmHg",
-        "Invasive BP Systolic": "5,Observation,100,Invasive systolic arterial pressure,mmHg",
-        "Invasive BP Diastolic": "6,Observation,120,Invasive diastolic arterial pressure,mmHg",
-        "CVP": [
-            "17,Observation,700,Central venous pressure,mmHg",
-            "18,Observation,15001441,Central venous pressure,mmHg",
-            "19,Observation,960,Central venous pressure,mmHg",
-        ],
+    "Additional": {
+        "Length of stay (days)": "#TO BE COMPUTED",
+        "Mortality (%)": "#TO BE COMPUTED",
     },
-    "vital aperiodic": {
-        "Non-Invasive BP Mean": "10,Observation,610,Non-invasive mean arterial pressure,mmHg",
-        "Non-Invasive BP Systolic": "8,Observation,600,Non-invasive systolic arterial pressure,mmHg",
-        "Non-Invasive BP Diastolic": "9,Observation,620,Non-invasive diastolic arterial pressure,mmHg",
-    },
-    "intake eoutput": {"Urine": "45,Observation,10020000,Hourly urine volume,ml/h"},
 }
