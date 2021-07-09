@@ -39,10 +39,7 @@
             "94,Observation,24000439,Chloride [Moles/volume] in Blood,mmol/l",
             "95,Observation,24000521,Chloride [Moles/volume] in Blood,mmol/l"
         ],
-        "Bilirubin": [
-            "109,Observation,24000560,Bilirubin.direct [Mass/volume] in Serum or Plasma,umol/l",
-            "108,Observation,20004300,Bilirubin.total [Moles/volume] in Serum or Plasma,umol/l"
-        ],
+        "Bilirubin": "108,Observation,20004300,Bilirubin.total [Moles/volume] in Serum or Plasma,umol/l",
         "White Blood Cells": "133,Observation,20000700,Leukocytes [#/volume] in Blood,G/l",
         "Platelets": "134,Observation,20000110,Platelets [#/volume] in Blood,G/l",
         "Hemoglobin": [
@@ -117,6 +114,7 @@
         "FiO2": "34,Observation,2010,Inspired oxygen concentration,%"
     },
     "Additional": {
+        "Albumin": "119,Observation,24000605,Albumin [Mass/volume] in Serum or Plasma,g/L",
         "Weight": "62,Observation,10000400,Body weight,kg",
         "Height": "63,Observation,10000450,Body height measure,cm",
         "Length of stay (days)": "#TO BE COMPUTED",
