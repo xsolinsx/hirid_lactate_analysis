@@ -4,7 +4,8 @@
         "age": "Age",
         "sex": "Sex",
         "admissiontime": "Admission Time",
-        "discharge_status": "Discharge Status"
+        "discharge_status": "Discharge Status",
+        "length_of_stay_computed": "Length of stay (days)"
     },
     "dynamic": {
         "patientid": "Patient ID",
@@ -37,7 +38,6 @@
         "200": "Heart rate",
         "24000836": "Hemoglobin",
         "24000485": "Lactate",
-        "length_of_stay_computed": "Length of stay (days)",
         "20000700": "Leukocytes",
         "24000480": "Lymphocytes",
         "24000230": "Magnesium",
