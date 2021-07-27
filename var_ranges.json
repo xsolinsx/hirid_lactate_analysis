@@ -1,0 +1,438 @@
+{
+    "Activated Partial Thromboplastin Time": {
+        "min": 0.0,
+        "max": 300.0
+    },
+    "Alanine aminotransferase": {
+        "min": 0.0,
+        "max": 12000.0
+    },
+    "Albumin": {
+        "min": 0.0,
+        "max": 70.0
+    },
+    "Alkaline phosphatase": {
+        "min": 0.0,
+        "max": 3000.0
+    },
+    "Anion Gap": {
+        "min": null,
+        "max": null
+    },
+    "Aspartate aminotransferase": {
+        "min": 0.0,
+        "max": 30000.0
+    },
+    "Base excess": {
+        "min": -30.0,
+        "max": 30.0
+    },
+    "Bicarbonate": {
+        "min": 0.0,
+        "max": 50.0
+    },
+    "Bilirubin.total": {
+        "min": 0.0,
+        "max": 1000.0
+    },
+    "Body Height": {
+        "min": null,
+        "max": null
+    },
+    "Body Weight": {
+        "min": 0.0,
+        "max": 500.0
+    },
+    "Calcium": {
+        "min": 0.0,
+        "max": 4.0
+    },
+    "Calcium.ionized": {
+        "min": 0.0,
+        "max": 3.0
+    },
+    "Carbon dioxide [Partial pressure]": {
+        "min": 3.0,
+        "max": 100.0
+    },
+    "Central Venous Pressure": {
+        "min": 0.0,
+        "max": 50.0
+    },
+    "Chloride": {
+        "min": 60.0,
+        "max": 140.0
+    },
+    "Creatinine": {
+        "min": 0.0,
+        "max": 1500.0
+    },
+    "Diastolic Arterial Blood Pressure": {
+        "min": null,
+        "max": null
+    },
+    "Fraction of Inspired Oxygen": {
+        "min": 21.0,
+        "max": 100.0
+    },
+    "Glasgow Coma Score - Verbal Response": {
+        "min": 1.0,
+        "max": 5.0
+    },
+    "Glasgow Coma Score - Motor Response": {
+        "min": 1.0,
+        "max": 6.0
+    },
+    "Glasgow Coma Score - Eye Opening": {
+        "min": 1.0,
+        "max": 4.0
+    },
+    "Glasgow Coma Score - Total": {
+        "min": null,
+        "max": null
+    },
+    "Glucose": {
+        "min": 0.0,
+        "max": 60.0
+    },
+    "Heart rate": {
+        "min": 0.0,
+        "max": 300.0
+    },
+    "Hemoglobin": {
+        "min": 20.0,
+        "max": 200.0
+    },
+    "Invasive Diastolic Arterial Blood Pressure": {
+        "min": 10.0,
+        "max": 175.0
+    },
+    "Invasive Mean Arterial Blood Pressure": {
+        "min": 10.0,
+        "max": 200.0
+    },
+    "Invasive Systolic Arterial Blood Pressure": {
+        "min": 10.0,
+        "max": 300.0
+    },
+    "Lactate": {
+        "min": 0.0,
+        "max": 20.0
+    },
+    "Leukocytes": {
+        "min": 0.0,
+        "max": 300.0
+    },
+    "Lymphocytes": {
+        "min": 0.0,
+        "max": 100.0
+    },
+    "Magnesium": {
+        "min": 0.0,
+        "max": 5.0
+    },
+    "Mean Arterial Blood Pressure": {
+        "min": null,
+        "max": null
+    },
+    "Mean Cell Hemoglobin": {
+        "min": 15.0,
+        "max": 45.0
+    },
+    "Mean Cell Hemoglobin Concentration": {
+        "min": 260.0,
+        "max": 400.0
+    },
+    "Mean Corpuscular Volume": {
+        "min": 60.0,
+        "max": 130.0
+    },
+    "Non-Invasive Diastolic Arterial Blood Pressure": {
+        "min": 10.0,
+        "max": 175.0
+    },
+    "Non-Invasive Mean Arterial Blood Pressure": {
+        "min": 10.0,
+        "max": 200.0
+    },
+    "Non-Invasive Systolic Arterial Blood Pressure": {
+        "min": 10.0,
+        "max": 300.0
+    },
+    "Oxygen [Partial pressure]": {
+        "min": 20.0,
+        "max": 500.0
+    },
+    "Oxygen Saturation": {
+        "min": 0.0,
+        "max": 100.0
+    },
+    "pH": {
+        "min": 6.5,
+        "max": 7.8
+    },
+    "Phosphate": {
+        "min": 0.0,
+        "max": 5.0
+    },
+    "Platelets": {
+        "min": 0.0,
+        "max": 1500.0
+    },
+    "Potassium": {
+        "min": 2.0,
+        "max": 12.0
+    },
+    "Prothrombin activity": {
+        "min": 0.0,
+        "max": 200.0
+    },
+    "Red blood cell Distribution Width": {
+        "min": null,
+        "max": null
+    },
+    "Respiratory rate": {
+        "min": 0.0,
+        "max": 45.0
+    },
+    "Sodium": {
+        "min": 0.0,
+        "max": 300.0
+    },
+    "Systolic Arterial Blood Pressure": {
+        "min": null,
+        "max": null
+    },
+    "Temperature": {
+        "min": 25.0,
+        "max": 45.0
+    },
+    "Troponin T.cardiac": {
+        "min": 0.0,
+        "max": 15000.0
+    },
+    "Urea": {
+        "min": 0.0,
+        "max": 60.0
+    },
+    "Urine Output": {
+        "min": 0.0,
+        "max": 1000.0
+    },
+    "Ammonia [Moles/volume] in Blood": {
+        "min": 0.0,
+        "max": 600.0
+    },
+    "Amylase [Enzymatic activity/volume] in Body fluid": {
+        "min": 0.0,
+        "max": 60000.0
+    },
+    "Amylase [Enzymatic activity/volume] in Serum or Plasma": {
+        "min": 0.0,
+        "max": 2000.0
+    },
+    "APACHE II Group": {
+        "min": null,
+        "max": null
+    },
+    "APACHE IV Group": {
+        "min": null,
+        "max": null
+    },
+    "Band form neutrophils/100 leukocytes in Blood": {
+        "min": 0.0,
+        "max": 100.0
+    },
+    "C reactive protein [Mass/volume] in Serum or Plasma": {
+        "min": 0.0,
+        "max": 600.0
+    },
+    "Carboxyhemoglobin/Hemoglobin.total in Arterial blood": {
+        "min": 0.0,
+        "max": 20.0
+    },
+    "Cardiac output": {
+        "min": 1.0,
+        "max": 20.0
+    },
+    "Circadian rhythm": {
+        "min": null,
+        "max": null
+    },
+    "Coagulation factor V activity actual/normal in Platelet poor plasma by Coagulation assay": {
+        "min": 0.0,
+        "max": 250.0
+    },
+    "Coagulation factor VII activity actual/normal in Platelet poor plasma by Coagulation assay": {
+        "min": 0.0,
+        "max": 500.0
+    },
+    "Coagulation factor X activity actual/normal in Platelet poor plasma by Coagulation assay": {
+        "min": 0.0,
+        "max": 170.0
+    },
+    "Cortisol [Moles/volume] in Serum or Plasma": {
+        "min": 0.0,
+        "max": 6000.0
+    },
+    "Creatine kinase panel - Serum or Plasma": {
+        "min": 0.0,
+        "max": 300000.0
+    },
+    "Creatine kinase.MB [Mass/volume] in Serum or Plasma": {
+        "min": 0.0,
+        "max": 2000.0
+    },
+    "End tidal carbon dioxide concentration": {
+        "min": 10.0,
+        "max": 100.0
+    },
+    "Erythrocyte sedimentation rate": {
+        "min": 0.0,
+        "max": 150.0
+    },
+    "Expiratory tidal volume": {
+        "min": 50.0,
+        "max": 1500.0
+    },
+    "Ferritin [Mass/volume] in Blood": {
+        "min": 0.0,
+        "max": 150000.0
+    },
+    "Fibrinogen [Mass/volume] in Platelet poor plasma by Coagulation assay": {
+        "min": 0.0,
+        "max": 12.0
+    },
+    "Fluid balance in": {
+        "min": 0.0,
+        "max": 15000.0
+    },
+    "Fluid balance out": {
+        "min": 0.0,
+        "max": 15000.0
+    },
+    "Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma": {
+        "min": 0.0,
+        "max": 2500.0
+    },
+    "Infusion of saline solution": {
+        "min": 0.0,
+        "max": 15000.0
+    },
+    "INR in Blood by Coagulation assay": {
+        "min": 0.0,
+        "max": 8.0
+    },
+    "Intracranial pressure": {
+        "min": 0.0,
+        "max": 150.0
+    },
+    "Intravenous fluid colloid administration": {
+        "min": 0.0,
+        "max": 5000.0
+    },
+    "Lipase [Enzymatic activity/volume] in Serum or Plasma": {
+        "min": 0.0,
+        "max": 4000.0
+    },
+    "Mean inspiratory airway pressure": {
+        "min": 5.0,
+        "max": 50.0
+    },
+    "Measurement of output from drain": {
+        "min": 0.0,
+        "max": 100.0
+    },
+    "Methemoglobin/Hemoglobin.total in Arterial blood": {
+        "min": 0.0,
+        "max": 20.0
+    },
+    "Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma": {
+        "min": 0.0,
+        "max": 100000.0
+    },
+    "Neutrophils/100 leukocytes in Blood": {
+        "min": 0.0,
+        "max": 100.0
+    },
+    "Oxygen administration by mask": {
+        "min": 0.0,
+        "max": 18.0
+    },
+    "Oxygen administration by nasal cannula": {
+        "min": 0.0,
+        "max": 18.0
+    },
+    "Peak inspiratory pressure": {
+        "min": 5.0,
+        "max": 100.0
+    },
+    "Plateau pressure": {
+        "min": 5.0,
+        "max": 50.0
+    },
+    "Positive end expiratory pressure": {
+        "min": 0.0,
+        "max": 25.0
+    },
+    "Positive end expiratory pressure setting": {
+        "min": 0.0,
+        "max": 25.0
+    },
+    "Procalcitonin [Mass/volume] in Serum or Plasma": {
+        "min": 0.0,
+        "max": 200.0
+    },
+    "Pulmonary artery diastolic pressure": {
+        "min": 10.0,
+        "max": 70.0
+    },
+    "Pulmonary artery mean pressure": {
+        "min": 10.0,
+        "max": 90.0
+    },
+    "Pulmonary artery systolic pressure": {
+        "min": 10.0,
+        "max": 150.0
+    },
+    "Pulmonary artery wedge pressure": {
+        "min": 10.0,
+        "max": 50.0
+    },
+    "Richmond agitation-sedation scale": {
+        "min": -5.0,
+        "max": 4.0
+    },
+    "Segmented neutrophils/100 leukocytes in Blood": {
+        "min": 0.0,
+        "max": 100.0
+    },
+    "ST elevation": {
+        "min": -20.0,
+        "max": 20.0
+    },
+    "Thyrotropin [Units/volume] in Serum or Plasma": {
+        "min": 0.0,
+        "max": 60.0
+    },
+    "Tidal volume setting": {
+        "min": 50.0,
+        "max": 1500.0
+    },
+    "Train of four count": {
+        "min": 0.0,
+        "max": 4.0
+    },
+    "Ventilator Airway Code": {
+        "min": null,
+        "max": null
+    },
+    "Ventilator mode": {
+        "min": null,
+        "max": null
+    },
+    "Ventilator rate": {
+        "min": 0.0,
+        "max": 45.0
+    }
+}
