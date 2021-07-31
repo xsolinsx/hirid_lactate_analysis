@@ -1,0 +1,11 @@
+{
+    "BASE_DATASETS_PATH": "D:/Data/Thesis_datasets",
+    "lactate_var_ids": [
+        "24000524",
+        "24000732",
+        "24000485",
+        "24000564"
+    ],
+    "RAW_OBS_PATH": "D:/Data/Thesis_datasets/raw_stage/observation_tables",
+    "DB_PATH": "D:/Data/Thesis_datasets/raw_data.db"
+}
