@@ -8,6 +8,7 @@ for (f in list.files("./results/distribution_plots/data")) {
     sep = "/"
   ))
   print(f)
+  # boxplot
   ggplot(tmp, aes(y = value)) +
     geom_boxplot() +
     ggtitle(gsub(".csv", "", f)) +
@@ -20,12 +21,13 @@ for (f in list.files("./results/distribution_plots/data")) {
   ggsave(
     paste(
       "./results/distribution_plots",
-      gsub(".csv", " BOX.jpg", f),
+      gsub(".csv", " BOX.png", f),
       sep = "/"
     ),
     width = 6,
     height = 6,
   )
+  # histogram
   ggplot(tmp, aes(x = value)) +
     geom_histogram() +
     ggtitle(gsub(".csv", "", f)) +
@@ -35,7 +37,7 @@ for (f in list.files("./results/distribution_plots/data")) {
   ggsave(
     paste(
       "./results/distribution_plots",
-      gsub(".csv", " HIST.jpg", f),
+      gsub(".csv", " HIST.png", f),
       sep = "/"
     ),
     width = 6,
