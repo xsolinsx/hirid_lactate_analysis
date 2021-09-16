@@ -9,7 +9,7 @@ for (f in list.files("./results/distribution_plots/data")) {
   ))
   print(f)
   # boxplot
-  ggplot(tmp, aes(y = value)) +
+  ggplot(tmp, aes(y = as.numeric(value))) +
     geom_boxplot() +
     ggtitle(gsub(".csv", "", f)) +
     ylab("Value") +
@@ -28,7 +28,7 @@ for (f in list.files("./results/distribution_plots/data")) {
     height = 6,
   )
   # histogram
-  ggplot(tmp, aes(x = value)) +
+  ggplot(tmp, aes(x = as.numeric(value))) +
     geom_histogram() +
     ggtitle(gsub(".csv", "", f)) +
     xlab("Value") +
