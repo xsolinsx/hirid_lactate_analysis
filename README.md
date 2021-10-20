@@ -11,6 +11,13 @@ Cd into it.
 ``` bash
 pip3 install -r requirements.txt
 ```
+
+Install ggplot2 inside R.
+
+``` R
+install.packages("ggplot2")
+```
+
 Update paths inside config.json according to yours.
 
 ### Usage
